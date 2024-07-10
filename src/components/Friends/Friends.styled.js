@@ -6,6 +6,6 @@ export const FriendList = styled.ul`
   display: flex;
   flex-direction: column;
   min-width: 200px;
-  margin: -${p => p.theme.mp(1)};
+  margin: ${p => p.theme.mp(0)};
   padding: ${p => p.theme.mp(2)};
 `;

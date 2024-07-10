@@ -6,8 +6,8 @@ const ProfileCard = styled.div`
   width: 300px;
 
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 
   border: 1px solid #000000;
   border-radius: 10px;
@@ -16,8 +16,11 @@ const ProfileCard = styled.div`
 `;
 
 export const Avatar = styled.img`
-  margin: 0 0 10px 0;
-  width: 100%;
+  width: 100px;
+  height: 100px;
+  margin: 20px 0 10px;
+  border-radius: 50%;
+  display: block;
 `;
 
 export const Name = styled.p`
@@ -33,6 +36,12 @@ export const Info = styled.p`
 
   font-size: 16px;
   font-weight: normal;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: ${p => p.theme.colors.mediumText};
 `;
 
 export const StatList = styled.ul`
@@ -40,7 +49,7 @@ export const StatList = styled.ul`
   align-items: flex-start;
   justify-content: space-around;
 
-  margin: ${p => p.theme.mp(-2)};
+  margin: ${p => p.theme.mp(2, -2, 0)};
   padding: ${p => p.theme.mp(0)};
   width: 100%;
 
@@ -48,24 +57,29 @@ export const StatList = styled.ul`
 `;
 
 export const StatItem = styled.li`
-  margin: ${p => p.theme.mp(2)};
-  width: calc((100%-10 * 6 / 3));
+  margin: 0;
+  padding: ${p => p.theme.mp(2)};
+  width: 100%;
+  height: 80px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
-  background-color: ${p=>p.theme.colors.statsBackground};
+  border: 1px solid ${p => p.theme.colors.statsBorder};
+  background-color: ${p => p.theme.colors.statsBackground};
 `;
 
 export const StatLabel = styled.span`
   margin: ${p => p.theme.mp(0)};
-  font-weight: ${p => p.theme.fontWeights.bold};
+  margin-bottom: ${p => p.theme.mp(1)};
+  font-weight: ${p => p.theme.fontWeights.normal};
 `;
 
 export const StatValue = styled.span`
   margin: ${p => p.theme.mp(0)};
-  font-weight: ${p => p.theme.fontWeights.normal};
+  font-weight: ${p => p.theme.fontWeights.bold};
 `;
 
 export { ProfileCard };

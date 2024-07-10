@@ -7,6 +7,7 @@ export const theme = {
     pageBackground: '#ffffff',
     sectionBackground: '#ffffff',
     statsBackground: '#ccdddd',
+    statsBorder: '#bbcccc',
     transactions: {
       headerBackground: '#009999',
       secondRow: '#e8eeee',
@@ -41,7 +42,7 @@ function returnParams(...sizes) {
 
   for (const size of sizes) {
     let index = size;
-    
+
     if (index === 0) {
       resultArray.push('0');
     } else if (index > 0) {

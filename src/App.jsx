@@ -26,7 +26,7 @@ function App() {
       </Section>
 
       <Section title="Statistics">
-        <Statistics statsList={statsData} />
+        <Statistics title="Upoad stats" statsList={statsData} />
       </Section>
 
       <Section title="Friends">

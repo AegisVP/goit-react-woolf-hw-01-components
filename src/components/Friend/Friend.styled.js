@@ -4,10 +4,11 @@ export const FriendCard = styled.li`
   display: flex;
   align-items: center;
   width: 300px;
-  padding: ${p => p.theme.mp(1)};
+  padding: ${p => p.theme.mp(3, 2)};
   margin: ${p => p.theme.mp(1)};
   background-color: ${p => p.theme.colors.paperBackground};
   border-radius: ${p => p.theme.radii.normal};
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 `;
 
 export const Status = styled.span`

@@ -1,6 +1,5 @@
 // import css from './Stats.module.css';
-import { StatValue } from 'components/Profile/Profile.styled';
-import { Stats, StatsTitle, StatsList, StatItem, StatLabel } from './Stats.styled';
+import { Stats, StatsTitle, StatsList, StatItem, StatLabel, StatValue } from './Stats.styled';
 
 const Statistics = ({ title, statsList = [] }) => (
   <Stats>
